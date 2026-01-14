@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "icon": "fas fa-code",
+      "skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "icon": "fas fa-toolbox",
+      "skills": [
+        "Node.js",
+        "Express",
+        "Flask",
+        "React",
+        "Next.js"
+      ]
+    },
+    {
+      "name": "Databases",
+      "icon": "fas fa-database",
+      "skills": [
+        "SQL",
+        "MongoDB",
+        "MySQL",
+        "Redis"
+      ]
+    },
+    {
+      "name": "DevOps & CI/CD",
+      "icon": "fas fa-cogs",
+      "skills": [
+        "Docker",
+        "Ansible"
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "skills": [
+        "Linux",
+        "Git"
+      ]
+    },
+    {
+      "name": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "skills": [
+        "HTML",
+        "CSS",
+        "REST APIs",
+        "JWT Auth",
+        "Tailwind CSS",
+        "Responsive UI",
+        "SQL Server",
+        "CI/CD (GitHub-to-Vercel)",
+        "ESLint",
+        "Kafka",
+        "Flink",
+        "log and packet analysis automation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "email": "sampadasantoshpavate@gmail.com",
+  "phone": "+1 (682) 413-0496",
+  "socials": [
+    {
+      "name": "Email",
+      "username": "sampadasantoshpavate@gmail.com",
+      "url": "mailto:sampadasantoshpavate@gmail.com",
+      "icon": "email"
+    },
+    {
+      "name": "Phone",
+      "username": "+1 (682) 413-0496",
+      "url": "tel:+16824130496",
+      "icon": "phone"
+    },
+    {
+      "name": "LinkedIn",
+      "username": "https://www.linkedin.com/in/sampada-pavate-2023/",
+      "url": "https://www.linkedin.com/in/sampada-pavate-2023/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "username": "@SampadaPawate",
+      "url": "https://github.com/SampadaPawate",
+      "icon": "github"
+    }
+  ],
+  "repoUrl": "https://github.com/SampadaPawate"
+}

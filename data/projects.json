@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "name": "Amazona (MERN E-Commerce)",
+    "image": "/default-project.png",
+    "description": "Built an end-to-end e-commerce app with JWT-secured APIs and Redux state management for scalable storefront and admin workflows.",
+    "tags": [
+      "JWT",
+      "Redux"
+    ],
+    "source_code": "https://github.com/SampadaPawate/amazona",
+    "demo": "https://github.com/SampadaPawate/amazona"
+  },
+  {
+    "id": 2,
+    "name": "Lab Fraud Detection (Streaming Demo)",
+    "image": "/default-project.png",
+    "description": "Containerized and validated a real-time streaming demo by orchestrating Flink and Kafka services with Docker Compose for repeatable local runs.",
+    "tags": [
+      "Flink",
+      "Kafka",
+      "Docker Compose"
+    ],
+    "source_code": "https://github.com/SampadaPawate/lab-fraud-detection",
+    "demo": "https://github.com/SampadaPawate/lab-fraud-detection"
+  },
+  {
+    "id": 3,
+    "name": "Python for Automating Information Security",
+    "image": "/default-project.png",
+    "description": "Built security automation utilities for log/packet analysis, OSINT collection, and TCP client/server tooling to speed repeatable testing and monitoring.",
+    "tags": [
+      "Python",
+      "OSINT",
+      "TCP"
+    ],
+    "source_code": "https://github.com/SampadaPawate/python-for-automating-information-security",
+    "demo": "https://github.com/SampadaPawate/python-for-automating-information-security"
+  },
+  {
+    "id": 4,
+    "name": "Brain Mapping EEG Classification System",
+    "image": "/default-project.png",
+    "description": "Delivered an EEG classification web app using 3-level 2D DWT feature extraction and MSE matching, returning JSON results with confidence.",
+    "tags": [],
+    "source_code": "https://github.com/SampadaPawate/brain-mapping-eeg-classification",
+    "demo": "https://github.com/SampadaPawate/brain-mapping-eeg-classification"
+  },
+  {
+    "id": 5,
+    "name": "dotnet-crud-api",
+    "image": "/default-project.png",
+    "description": "A RESTful CRUD API built with .NET 8, Entity Framework Core, and SQLite. Features Swagger documentation and full product management operations.",
+    "tags": [
+      "C#",
+      "Dockerfile"
+    ],
+    "source_code": "https://github.com/SampadaPawate/dotnet-crud-api",
+    "demo": "https://github.com/SampadaPawate/dotnet-crud-api"
+  },
+  {
+    "id": 6,
+    "name": "SampadaPawate.github.io",
+    "image": "/default-project.png",
+    "description": "Professional portfolio for SampadaPawate",
+    "tags": [
+      "JavaScript",
+      "CSS",
+      "Shell",
+      "HTML"
+    ],
+    "source_code": "https://github.com/SampadaPawate/SampadaPawate.github.io",
+    "demo": "https://github.com/SampadaPawate/SampadaPawate.github.io"
+  },
+  {
+    "id": 7,
+    "name": "Lexsy_Document_Filler",
+    "image": "/default-project.png",
+    "description": "GitHub repository: Lexsy_Document_Filler",
+    "tags": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "source_code": "https://github.com/SampadaPawate/Lexsy_Document_Filler",
+    "demo": "https://lexsy-document-filler.vercel.app"
+  },
+  {
+    "id": 8,
+    "name": "jeff-lei-lab-website",
+    "image": "/default-project.png",
+    "description": "GitHub repository: jeff-lei-lab-website",
+    "tags": [
+      "TypeScript",
+      "Python",
+      "CSS",
+      "JavaScript"
+    ],
+    "source_code": "https://github.com/SampadaPawate/jeff-lei-lab-website",
+    "demo": "https://github.com/SampadaPawate/jeff-lei-lab-website"
+  },
+  {
+    "id": 9,
+    "name": "Portfolio",
+    "image": "/default-project.png",
+    "description": "Portfolio - Built with TypeScript, CSS, JavaScript",
+    "tags": [
+      "TypeScript",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "source_code": "https://github.com/SampadaPawate/Portfolio",
+    "demo": "https://github.com/SampadaPawate/Portfolio"
+  },
+  {
+    "id": 10,
+    "name": "creative-anthro",
+    "image": "/default-project.png",
+    "description": "GitHub repository: creative-anthro",
+    "tags": [
+      "TypeScript",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "source_code": "https://github.com/SampadaPawate/creative-anthro",
+    "demo": "https://github.com/SampadaPawate/creative-anthro"
+  },
+  {
+    "id": 11,
+    "name": "LeetCode",
+    "image": "/default-project.png",
+    "description": "LeetCode - Built with Python",
+    "tags": [
+      "Python"
+    ],
+    "source_code": "https://github.com/SampadaPawate/LeetCode",
+    "demo": "https://github.com/SampadaPawate/LeetCode"
+  },
+  {
+    "id": 12,
+    "name": "security-task-mangement",
+    "image": "/default-project.png",
+    "description": "GitHub repository: security-task-mangement",
+    "tags": [
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "PowerShell",
+      "JavaScript",
+      "Batchfile"
+    ],
+    "source_code": "https://github.com/SampadaPawate/security-task-mangement",
+    "demo": "https://github.com/SampadaPawate/security-task-mangement"
+  },
+  {
+    "id": 13,
+    "name": "Voicelytics",
+    "image": "/default-project.png",
+    "description": "GitHub repository: Voicelytics",
+    "tags": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "source_code": "https://github.com/SampadaPawate/Voicelytics",
+    "demo": "https://github.com/SampadaPawate/Voicelytics"
+  },
+  {
+    "id": 14,
+    "name": "Learnify",
+    "image": "/default-project.png",
+    "description": "Learnify - Built with TypeScript, HTML, JavaScript",
+    "tags": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "source_code": "https://github.com/SampadaPawate/Learnify",
+    "demo": "https://github.com/SampadaPawate/Learnify"
+  },
+  {
+    "id": 15,
+    "name": "MavMarket",
+    "image": "/default-project.png",
+    "description": "MavMarket - Built with Kotlin",
+    "tags": [
+      "Kotlin"
+    ],
+    "source_code": "https://github.com/SampadaPawate/MavMarket",
+    "demo": "https://github.com/SampadaPawate/MavMarket"
+  },
+  {
+    "id": 16,
+    "name": "Bhoomi177.github.io",
+    "image": "/default-project.png",
+    "description": "GitHub repository: Bhoomi177.github.io",
+    "tags": [],
+    "source_code": "https://github.com/SampadaPawate/Bhoomi177.github.io",
+    "demo": "https://github.com/SampadaPawate/Bhoomi177.github.io"
+  },
+  {
+    "id": 17,
+    "name": "niftydiran-ui.github.io",
+    "image": "/default-project.png",
+    "description": "GitHub repository: niftydiran-ui.github.io",
+    "tags": [],
+    "source_code": "https://github.com/SampadaPawate/niftydiran-ui.github.io",
+    "demo": "https://github.com/SampadaPawate/niftydiran-ui.github.io"
+  }
+]
