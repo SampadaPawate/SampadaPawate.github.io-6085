@@ -1,8 +1,7 @@
-const isProd = process.env.NODE_ENV === 'production';
-
 module.exports = {
-  basePath: isProd ? '/SampadaPawate.github.io-6085' : '',
-  assetPrefix: isProd ? '/SampadaPawate.github.io-6085' : '',
+  // Custom domain serves from root, no basePath needed
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true,
     domains: [
