@@ -27,7 +27,7 @@ const GithubPage = ({ repos, user }) => {
       <div className={styles.user}>
         <div>
           <img
-            src={getAssetPath(user.avatar_url)}
+            src={user.avatar_url}
             className={styles.avatar}
             alt={`${user.login}'s GitHub avatar`}
             width={50}
