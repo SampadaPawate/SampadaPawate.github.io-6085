@@ -22,10 +22,10 @@ const Titlebar = () => {
         <p>Help</p>
       </div>
       <p className={styles.title}>{user.name} - Portfolio</p>
-      <div className={styles.windowButtons}>
-        <span className={styles.minimize}></span>
-        <span className={styles.maximize}></span>
-        <span className={styles.close}></span>
+      <div className={styles.windowButtons} aria-hidden="true">
+        <span className={styles.minimize} aria-label="Minimize"></span>
+        <span className={styles.maximize} aria-label="Maximize"></span>
+        <span className={styles.close} aria-label="Close"></span>
       </div>
     </section>
   );

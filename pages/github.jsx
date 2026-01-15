@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
@@ -5,6 +6,14 @@ import githubData from '../data/github.json';
 import { getAssetPath } from '../lib/utils';
 
 const GithubPage = ({ repos, user }) => {
+  const [calendarLoaded, setCalendarLoaded] = useState(false);
+
+  useEffect(() => {
+    // Simulate loading delay for calendar
+    const timer = setTimeout(() => setCalendarLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
@@ -20,9 +29,10 @@ const GithubPage = ({ repos, user }) => {
           <img
             src={getAssetPath(user.avatar_url)}
             className={styles.avatar}
-            alt={user.login}
+            alt={`${user.login}'s GitHub avatar`}
             width={50}
             height={50}
+            loading="lazy"
           />
           <h3 className={styles.username}>{user.login}</h3>
         </div>
@@ -39,12 +49,18 @@ const GithubPage = ({ repos, user }) => {
         ))}
       </div>
       <div className={styles.contributions}>
-        <GitHubCalendar
-          username={user.login}
-          theme={theme}
-          hideColorLegend
-          hideMonthLabels
-        />
+        {calendarLoaded ? (
+          <GitHubCalendar
+            username={user.login}
+            theme={theme}
+            hideColorLegend
+            hideMonthLabels
+          />
+        ) : (
+          <div style={{ textAlign: 'center', padding: '2rem', color: '#9ca3af' }}>
+            Loading contribution graph...
+          </div>
+        )}
       </div>
     </>
   );

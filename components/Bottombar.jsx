@@ -37,7 +37,7 @@ const Bottombar = () => {
           <p>Prettier</p>
         </div>
         <div className={styles.section}>
-          <BellIcon />
+          <BellIcon aria-label="Notifications" />
         </div>
       </div>
     </footer>

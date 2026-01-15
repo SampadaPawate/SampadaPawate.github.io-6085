@@ -16,8 +16,8 @@ const explorerItems = [
     icon: 'html_icon.svg',
   },
   {
-    name: 'contact.css',
-    path: '/contact',
+    name: 'experience.css',
+    path: '/experience',
     icon: 'css_icon.svg',
   },
   {
@@ -26,8 +26,8 @@ const explorerItems = [
     icon: 'js_icon.svg',
   },
   {
-    name: 'experience.json',  // Add this line
-    path: '/experience',
+    name: 'research.json',
+    path: '/research',
     icon: 'json_icon.svg',
   },
   {
@@ -36,16 +36,25 @@ const explorerItems = [
     icon: 'yaml_icon.svg',
   },
   {
-    name: 'resume.pdf',
-    path: '/resume',
-    icon: 'pdf_icon.svg',
-  },
-  {
     name: 'github.md',
     path: '/github',
     icon: 'markdown_icon.svg',
-  }
-  
+  },
+  {
+    name: 'certifications.jsx',
+    path: '/certifications',
+    icon: 'react_icon.svg',
+  },
+  {
+    name: 'endorsement.html',
+    path: '/endorsements',
+    icon: 'html_icon.svg',
+  },
+  {
+    name: 'contact.css',
+    path: '/contact',
+    icon: 'css_icon.svg',
+  },
 ];
 
 const Explorer = () => {

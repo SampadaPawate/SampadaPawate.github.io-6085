@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
 .container {
   display: flex;
@@ -6,11 +6,13 @@
   height: 75vh;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .background {
   font-size: 5rem;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   line-height: 1.1;
   color: var(--bg-text);
   position: absolute;
@@ -20,90 +22,123 @@
 .foreground {
   z-index: 2;
   display: flex;
-  color: var(--accent-color);
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  width: 100%;
 }
 
-.name {
+.content {
+  max-width: 600px;
+}
+
+.greeting {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2rem;
   color: #eee;
-  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.codeIcon {
+  color: #2c9ffe;
+  font-weight: 600;
+}
+
+.firstName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #eee;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.lastName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f97316;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+.role {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.3rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+}
+
+.typed {
+  color: #2c9ffe;
   font-weight: 500;
-  margin-bottom: 0.5rem;
 }
 
-.bio {
-  width: auto;
-  color: #eee;
-  font-size: 1.5rem;
+.cursor {
+  color: #2c9ffe;
+  animation: blink 1s step-end infinite;
   font-weight: 300;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-.bio::before,
-.bio::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.bio::before {
-  background: var(--main-bg);
-  animation: typewriter 2.5s steps(24) 500ms forwards;
-}
-
-.bio::after {
-  margin-left: 0.4rem;
-  width: 0.125em;
-  background: var(--accent-color);
-  animation: typewriter 2.5s steps(24) 500ms forwards,
-    blink 750ms steps(24) infinite;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
 }
 
 @keyframes blink {
-  to {
-    background: transparent;
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
+.description {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  color: #9ca3af;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .button {
-  background: var(--accent-color);
-  font-size: 1.25rem;
-  padding: 0.5rem 1rem;
-  margin-right: 1.5rem;
-  color: #eee;
+  background: linear-gradient(135deg, #2c9ffe 0%, #1e7fd6 100%);
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
   font-weight: 600;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(44, 159, 254, 0.4);
 }
 
 .outlined {
-  font-size: 1.25rem;
-  padding: 0.5rem 1rem;
-  color: #eee;
-  border: 2px solid var(--accent-color);
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #2c9ffe;
+  border: 2px solid #2c9ffe;
   background: transparent;
   cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.button:hover,
 .outlined:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.illustration {
-  height: 500px;
-  width: 460px;
+  background: rgba(44, 159, 254, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(44, 159, 254, 0.2);
 }
 
 /* 4K Screens */
@@ -113,23 +148,23 @@
   }
   .content {
     padding: 0 3rem;
+    max-width: 900px;
   }
-  .name {
+  .firstName, .lastName {
     font-size: 6rem;
   }
-  .bio {
-    font-size: 3rem;
-    margin-bottom: 5rem;
+  .greeting {
+    font-size: 1.8rem;
   }
-  .button {
+  .role {
     font-size: 2rem;
   }
-  .outlined {
-    font-size: 2rem;
+  .description {
+    font-size: 1.3rem;
   }
-  .illustration {
-    height: 900px;
-    width: 700px;
+  .button, .outlined {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -144,22 +179,20 @@
   }
   .foreground {
     margin: 4rem 0;
-    display: block;
+    flex-direction: column;
     text-align: center;
   }
-  .name {
-    font-size: 4rem;
+  .content {
+    max-width: 100%;
   }
-  .bio {
-    font-size: 1.75rem;
-    margin: 0.75rem auto 3rem;
+  .firstName, .lastName {
+    font-size: 3.5rem;
   }
-  .illustration {
-    position: absolute;
-    bottom: -50px;
-    right: 0;
-    height: 700px;
-    width: 600px;
+  .greeting {
+    justify-content: center;
+  }
+  .buttons {
+    justify-content: center;
   }
 }
 
@@ -168,27 +201,17 @@
   .foreground {
     margin: 2rem 0;
   }
-  .name {
+  .firstName, .lastName {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
   }
-  .bio {
-    font-size: 1.5rem;
-  }
-  .illustration {
-    /* height: 0px;
-    width: 0px; */
-    bottom: -50px;
-    display: none;
+  .role {
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1100px) {
   .container {
     display: flex;
-  }
-  .illustration {
-    display: none;
   }
 }
 
@@ -198,35 +221,31 @@
     font-size: 3rem;
   }
 }
+
 /* Phone */
 @media screen and (max-width: 600px) {
-  
   .foreground {
     margin: 0;
     padding-top: 40px;
   }
-  .name {
-    font-size: 2rem;
+  .firstName, .lastName {
+    font-size: 2.2rem;
   }
-  .bio {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  .button {
+  .greeting {
     font-size: 1rem;
   }
-  .outlined {
+  .role {
     font-size: 1rem;
   }
-  /* .container{
-    padding-top: 80px;
-  } */
-  /* .illustration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 75vw;
-    height: 50vh;
-    z-index: 1;
-  } */
+  .description {
+    font-size: 0.85rem;
+  }
+  .button, .outlined {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }

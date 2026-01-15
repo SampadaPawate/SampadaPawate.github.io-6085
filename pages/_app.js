@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/Head";
+import ErrorBoundary from "../components/ErrorBoundary";
 import "../styles/globals.css";
 import "../styles/themes.css";
 import user from "../data/user.json";
@@ -17,10 +18,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Head title={`${user.name} | ${pageProps.title}`} />
-      <Component {...pageProps} />
-    </Layout>
+    <ErrorBoundary>
+      <Layout>
+        <Head title={`${user.name} | ${pageProps.title}`} />
+        <Component {...pageProps} />
+      </Layout>
+    </ErrorBoundary>
   );
 }
 

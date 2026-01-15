@@ -5,7 +5,7 @@
     "company": "University of Texas",
     "date": "May 2025 - Present",
     "description": "Migrated a site from Jekyll to Next.js 14 (TypeScript, Tailwind); converted YAML content to typed JSON to improve maintainability and performance.\nBuilt filterable Team/News/Publications modules and shipped via GitHub-to-Vercel CI/CD with linting and analytics for reliable releases.",
-    "icon": "/default-company.png",
+    "icon": "/default-company.svg",
     "iconBg": "#6b7c93"
   },
   {
@@ -14,7 +14,7 @@
     "company": "Gangavathiexports",
     "date": "Jan 2024 - Jun 2024",
     "description": "Automated Magento deployment on Ubuntu with Ansible + SMTP setup, reducing deployment time by 75%.\nImproved mobile UX and configurable product workflows (+40% inventory efficiency); integrated secure payment flow and SEO improvements.",
-    "icon": "/default-company.png",
+    "icon": "/default-company.svg",
     "iconBg": "#264653"
   },
   {
@@ -23,7 +23,7 @@
     "company": "Maruti Constructions",
     "date": "Sep 2021 - Aug 2022",
     "description": "Developed a price prediction system (Linear Regression) achieving 92% accuracy and cutting estimation time by 75%.\nDeployed a Flask REST API with Redis + MySQL for sub-second predictions; improved model quality via outlier handling and feature engineering (+38%).",
-    "icon": "/default-company.png",
+    "icon": "/default-company.svg",
     "iconBg": "#6b7c93"
   }
 ]

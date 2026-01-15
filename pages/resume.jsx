@@ -8,17 +8,38 @@ const ResumePage = () => {
   const [error, setError] = React.useState(null);
   const resumeLink = getAssetPath(user.resumeUrl);
 
+  const containerStyle = {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '1rem',
+  };
+
+  const headingStyle = {
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+    color: 'var(--text-color, #fff)',
+  };
+
+  const viewerContainerStyle = {
+    height: '90vh',
+  };
+
+  const errorStyle = {
+    color: '#ef4444',
+  };
+
   return (
-    <div className="container mx-auto p-4">
-      <h3 className="text-2xl font-bold mb-4">My Resume</h3>
-      <div className="h-[90vh]">
+    <div style={containerStyle}>
+      <h3 style={headingStyle}>My Resume</h3>
+      <div style={viewerContainerStyle}>
         {error ? (
-          <div className="text-red-500">
+          <div style={errorStyle}>
             Failed to load PDF: {error}
           </div>
         ) : (
           <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-            <Viewer 
+            <Viewer
               fileUrl={resumeLink}
               onError={(error) => setError(error.message)}
             />
